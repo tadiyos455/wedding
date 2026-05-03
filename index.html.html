@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --gold:#c8a24a;
+  --dark:#0b0b0c;
+  --text:#f5f1e6;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  background:var(--dark);
+  color:var(--text);
+  font-family:Inter,sans-serif;
+  scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:18px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+nav a{
+  color:var(--text);
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+nav a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)),
+    url('images/image_2026-05-03_15-51-02.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:Playfair Display;
+  font-size:70px;
+  color:var(--gold);
+}
+
+.hero p{
+  margin-top:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-size:14px;
+}
+
+/* COUNTDOWN GOLD BOX */
+.countdown{
+  margin-top:25px;
+}
+
+#timer{
+  display:inline-block;
+  padding:14px 26px;
+  margin-top:12px;
+
+  background:linear-gradient(145deg,#d4af37,#b8922e);
+  border-radius:18px;
+
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:2px;
+
+  color:#111;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.5);
+  border:1px solid rgba(255,255,255,0.25);
+}
+
+/* SECTIONS */
+.section{
+  padding:100px 20px;
+  max-width:1000px;
+  margin:auto;
+  text-align:center;
+}
+
+h2{
+  font-family:Playfair Display;
+  color:var(--gold);
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(200,162,74,0.2);
+  padding:40px;
+  border-radius:14px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* INPUT */
+input,select{
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  background:transparent;
+  border:1px solid rgba(200,162,74,0.3);
+  color:white;
+  outline:none;
+}
+
+button{
+  padding:14px 30px;
+  background:var(--gold);
+  border:none;
+  font-weight:700;
+  letter-spacing:2px;
+  cursor:pointer;
+}
+
+button:hover{opacity:0.85;}
+
+/* CONTACT */
+.contact a{
+  display:inline-block;
+  margin:10px;
+  padding:10px 18px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+}
+.contact a:hover{
+  background:var(--gold);
+  color:black;
+}
+
+/* WISHES */
+.review{
+  background:rgba(255,255,255,0.03);
+  padding:12px;
+  margin-top:10px;
+  border-radius:10px;
+  text-align:left;
+}
+.review strong{color:var(--gold);}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#story">Story</a>
+  <a href="#event">Event</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#rsvp">RSVP</a>
+  <a href="#reviews">Wishes</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div>
+    <h1>Tadiyos & Hermela</h1>
+    <p>We are getting married</p>
+<br>
+<div></div>
+<div></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="countdown">
+      <p>Wedding Countdown</p>
+      <br>
+      <div id="timer"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section" id="story">
+  <div class="card">
+    <h2>💛Our Story💛</h2>
+    <p>It all started with a simple hello…
+<div>
+  Two hearts, two different paths, one unexpected journey.
+  We met as strangers,but with every
+</div>
+<div> conversation, every smile, and every moment shared, something beautiful began to grow.</div> 
+<div>What started as friendship slowly turned into love—pure,patient, and real.</div>
+ <div>
+   Through ups and downs, laughter and lessons,we chose each other</div>
+  <div> every day. And now, we are ready to take  the biggest step</div> <div>
+    of our journey together. With the blessings of our families and
+  </div><div>the love of our friends, we are delighted to </div>invite you to our wedding celebration..</p>
+  </div>
+</section>
+
+<!-- EVENT -->
+<section class="section" id="event">
+  <div class="card">
+    <h2>Wedding Event</h2>
+    <div></div>
+    <img src="images/image_2026-05-03_17-48-32.png" height="200cm">
+    <p>Central Hotel • Addis Ababa</p>
+  
+    <p>4:00 PM Ceremony</p> <br>
+   <br> <div><a href="https://maps.app.goo.gl/1GeYdpqSmquY2BEJ7" target="_blank"
+   style="padding:10px 20px; background:gold; color:black; text-decoration:none; border-radius:8px;">
+  📍 Open Map
+</a></div>
+  </div>
+</section><!-- GALLERY -->
+<section class="section" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/image_2026-05-03_15-53-42.png">
+    <img src="images/image_2026-05-03_15-53-17.png">
+    <img src="images/image_2026-05-03_15-52-58.png">
+    <img src="images/image_2026-05-03_15-52-44.png">
+    <img src="images/image_2026-05-03_15-52-24.png">
+    <img src="images/image_2026-05-03_15-51-42.png">
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="section" id="rsvp">
+  <div class="card">
+    <h2>RSVP</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <select>
+      <option>Will you attend?</option>
+      <option>Yes</option>
+      <option>No</option>
+    </select>
+    <button>Confirm</button>
+  </div>
+</section>
+
+<!-- WISHES -->
+<section class="section" id="reviews">
+  <div class="card">
+    <h2>Guest Wishes</h2>
+
+    <input id="name" placeholder="Your Name">
+    <input id="msg" placeholder="Your Message">
+    <button onclick="addWish()">Send Wish</button>
+
+    <div id="list"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact">
+    <a href="https://t.me/tadi08">Telegram</a>
+    <a href="https://wa.me/251953501304">WhatsApp</a>
+    <a href="mailto:tadiyos455@gmail.com">Email</a>
+  </div>
+</section>
+
+<!-- SCRIPT -->
+<script>
+
+/* COUNTDOWN */
+const weddingDate = new Date("June 12, 2026 16:00:00").getTime();
+
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = weddingDate - now;
+
+  const d = Math.floor(diff/(1000*60*60*24));
+  const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+  const m = Math.floor((diff%(1000*60*60))/(1000*60));
+  const s = Math.floor((diff%(1000*60))/1000);
+
+  document.getElementById("timer").innerHTML =
+    d+"d : "+h+"h : "+m+"m : "+s+"s";
+
+  if(diff < 0){
+    document.getElementById("timer").innerHTML = "💍 We Are Married!";
+  }
+},1000);
+
+/* WISHES */
+function addWish(){
+  let n=document.getElementById("name").value;
+  let m=document.getElementById("msg").value;
+
+  let div=document.createElement("div");
+  div.className="review";
+  div.innerHTML="<strong>"+n+":</strong> "+m;
+
+  document.getElementById("list").appendChild(div);
+}
+</script>
+
+</body>
+</html>
+
+Telegram (http://t.me/username)
+Telegram Usernames
+This channel is managed by the Telegram team to inform users about upd
